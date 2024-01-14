@@ -12,6 +12,13 @@ public class FormulirGUI {
         JPanel panel = new JPanel();
         panel.setBackground(Color.blue); // Ubah warna latar belakang panel
         frame.add(panel);
+
+        // Menambahkan watermark
+        JLabel watermarkLabel = new JLabel("Aplikasi Formulir by Hanifah");
+        watermarkLabel.setForeground(Color.WHITE);
+        watermarkLabel.setBounds(10, 5, 200, 15);
+        panel.add(watermarkLabel);
+
         placeComponents(panel);
 
         // Menampilkan frame
